@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>calculo salario</title>
+</head>
+<body class="app">
+    <header class="cabecalho">
+        <h1 class="titulo">
+            Calculo de Salario
+        </h1>
+    </header>
+    <main class="container">
+        <section class="fun">
+            <p class="func">Função:</p>
+            <div class="selecao">
+                <input type="radio" name="funcao" class="motorista">
+                <label for="motorista">Motorista</label>
+                <input type="radio" name="funcao" class="empi">
+                <label for="empi">operador de empilhadeira</label>
+                <input type="radio" name="funcao" class="ajudante">
+                <label for="ajudante">ajudante</label>               
+            </div>
+            <div class="horas__extras">
+                <p class="horas">Horas Extras: <input type="number" name="horasextras" id="horasextras" required></p>                
+            </div>
+            <div class="botao">
+                <input type="button" value="calcular" class="calcular" onclick="calcular()">
+            </div>
+            
+        </section>
+        <section class="caixa">
+        <section class="disc">
+            <h2 class="topico">Discrição</h2>
+            <P>Salario base</P>
+            <P>Horas Extras</P>
+            <P>FGTS</P>
+            <P>INSS</P>
+            <P>Vale alimentação</P>
+            <P>Vale Transporte</P>
+            <P>Desconto VA</P>
+            <P>Desconto VT</P>
+            <p class="total">Liquido a receber</p>
+        </section>
+        <section class="valor__ent">
+            <div class="entrada">
+                <h2 class="topico">Descontos</h2>
+                <p>-</p>
+                <p>-</p>
+                <p class="res__fgts">-</p>
+                <p class="res__inss">-</p>
+                <p>-</p>
+                <p>-</p>
+                <p class="res__va">-</p>
+                <p class="res__vt">-</p>
+            </div>
+        </section>
+        <section class="valor__sai">
+            <div class="saida">
+                <h2 class="topico">Crédito</h2>
+                <p class="res__sal">-</p>
+                <p class="res__he">-</p>
+                <p>-</p>
+                <p>-</p>
+                <p>R$ 460,00</p>
+                <p>R$ 280,00</p>
+                <p>-</p>
+                <p>-</p>
+                <p class="res__total">total</p>
+            </div>
+        </section>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>developed by: &copy;Bruno Neves
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
